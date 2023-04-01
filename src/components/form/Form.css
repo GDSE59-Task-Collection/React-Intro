@@ -3,16 +3,24 @@
     flex-direction: column;    
     align-items: center;
     position: relative;
-    top: 100px;
-    
+    top: 100px;   
 }
+label{
+    font-size: 1.5rem;
+}
+#topic{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 input{
     width: 30vw;
     margin: 10px;
-    height: 35px;
+    height: 50px;
     border-radius: 10px;
     border: 1px solid black;
     padding-left: 20px;
+    font-size: 1.5rem;
 }
 #age{
     width: 100px;
@@ -25,6 +33,7 @@ input{
     border-radius: 10px;
     border: transparent;
     color: white;
+    font-size: 1.5rem;
 }
 submit:hover{
     width: 105px;

@@ -1,7 +1,8 @@
+import './Other.css'
 export const Other = ()=>{
     return(
-        <h1>
+        <div id='msg'>
             404 Not Found
-        </h1>
+        </div>
     );
 }

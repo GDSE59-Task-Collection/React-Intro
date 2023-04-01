@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './Form.css'
 
 export const Form = () =>{
-  const [name,setName] = useState("Test");
+  const [name,setName] = useState("");
   const [address,setAddress] = useState("");
   const [email,setEmail] = useState("");
   const [age,setAge] = useState("");
@@ -16,26 +16,28 @@ export const Form = () =>{
         formEmail:email,
         formAge:age
     }
+    setName("");
+    setAddress("");
+    setEmail("");
+    setAge("");
+
     console.log(getDetails);
   }
-
- 
 
    return(
       <div>
          <form id="myform" onSubmit={handleonsubmit}>          
-         <h1>My Form</h1>         
-         <label for="name">Name:</label>
+         <p id="topic">Please fill the details</p>
+
+         <label htmlFor="name">Name:</label>
 
          <input 
          id="name" 
          type="text"
          value={name}
          onChange={e => setName(e.target.value)}      
-         />
-
-         
-         <label for="contact">Contact No.:</label>
+         />        
+         <label htmlFor="contact">Contact No.:</label>
 
          <input 
          id="contact" 
@@ -43,8 +45,7 @@ export const Form = () =>{
          value={address}
          onChange={e =>setAddress(e.target.value)}
          />
-
-         <label for="email">Email:</label>
+         <label htmlFor="email">Email:</label>
 
          <input 
          id="email" 
@@ -53,8 +54,8 @@ export const Form = () =>{
          onChange = {e => setEmail(e.target.value)}
          />
 
-         <label for="age">Age:</label>
-
+         <label htmlFor="age">Age:</label>
+         
          <input 
          id="age" 
          type="number" 
