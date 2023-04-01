@@ -1,0 +1,16 @@
+.btn-form{
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+}
+#nav-outer{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100px;
+    position: fixed;
+    background-color: chocolate;
+}
